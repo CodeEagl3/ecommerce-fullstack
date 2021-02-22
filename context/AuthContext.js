@@ -6,6 +6,7 @@ const AuthContext = createContext()
 export const AuthProvider = (props) => {
 
     const [user,setUser] = useState(null)
+    const router = useRouter()
 
     /**
      * Adds email to user
@@ -21,7 +22,7 @@ export const AuthProvider = (props) => {
      *Sets the user to null
      */
 
-    const logoutUser = async (email) => {
+    const logoutUser = async () => {
         setUser(null)
         router.push("/")
     }

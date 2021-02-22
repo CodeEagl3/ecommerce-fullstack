@@ -42,7 +42,7 @@ export default () => {
                     </Link>)
                     :
                     (
-                    <Link>
+                    <Link href="/login">
                         <a>Log in</a>
                     </Link>
                 )}
